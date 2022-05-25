@@ -1,7 +1,7 @@
 const express = require("express");
 const { ApolloServer } = require("apollo-server-express");
 const mongoose = require("mongoose");
-const connectMongoDB = require("./config/dbConnector");
+const connectMongoDB = require("./src/config/dbConnector");
 const { typeDefs } = require("./src/schema/type-defs");
 const { resolvers } = require("./src/schema/resolvers");
 const Data = require("./src/data/Data");
