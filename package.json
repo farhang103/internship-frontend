@@ -1,16 +1,27 @@
 {
-  "name": "nurafin",
+  "name": "testing",
   "version": "1.0.0",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "main": "index.js",
+  "devDependencies": {
+    "apollo-server-express": "^3.7.0",
+    "ccxt": "^1.82.61",
+    "express": "^4.18.1",
+    "graphql": "^16.5.0",
+    "nodemon": "^2.0.16"
   },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
   "license": "ISC",
+  "description": "",
   "dependencies": {
-    "apollo-server-express": "^3.3.0",
-    "express": "^4.17.1",
-    "express-graphql": "^0.12.0",
-    "mongoose": "^6.0.8",
-    "nodemon": "^2.0.13"
+    "lightweight-charts": "^3.8.0",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.3.4",
+    "underscore": "^1.13.3"
   }
 }
