@@ -1,6 +1,5 @@
 const express = require("express");
 const { ApolloServer } = require("apollo-server-express");
-const mongoose = require("mongoose");
 const connectMongoDB = require("./src/config/dbConnector");
 const { typeDefs } = require("./src/schema/type-defs");
 const { resolvers } = require("./src/schema/resolvers");
@@ -16,8 +15,8 @@ const startSever = async () => {
   server.applyMiddleware({ app });
   console.log("Mongoose is connected...");
 
-  Data("BTC/USDT");
-  Data("BNB/USDT");
+  await Data("BTC/USDT");
+  await Data("BNB/BTC");
 
   app.listen(4000, () => console.log("server is running on port 4000"));
 };

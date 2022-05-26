@@ -44,7 +44,7 @@ const data = async (pariData) => {
     });
     candle.save();
   }
-  console.log(`Got all data for ${pariData}`);
+  console.log(`Got all the data for ${pariData}`);
 };
 
 module.exports = data;
